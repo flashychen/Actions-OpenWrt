@@ -19,6 +19,6 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 # 进入 package 目录并直接克隆源码
-git clone --depth 1 https://github.com package/daed-app
+git clone --depth 1 "https://github.com package/daed-app"
 
 
