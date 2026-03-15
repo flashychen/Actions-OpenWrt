@@ -16,5 +16,7 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# 先删除之前可能写错的行（如果有的话）
+sed -i '/daed/d' feeds.conf.default
 # 添加 daed 源码源
 echo 'src-git daed https://github.com' >> feeds.conf.default
